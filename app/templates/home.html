@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="jumbotron p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Welcome to MyFlaskApp</h1>
+        <p class="col-md-8 fs-4">This is a simple, responsive, and professional template built with Flask and Bootstrap 5.</p>
+        <a class="btn btn-primary btn-lg" href="{{ url_for('users.register') }}" role="button">Get Started</a>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Feature One</h5>
+                <p class="card-text">Highlight your features with this simple card component.</p>
+                <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Feature Two</h5>
+                <p class="card-text">Use cards to display your content in a modern, structured way.</p>
+                <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Feature Three</h5>
+                <p class="card-text">Responsive and flexible layouts with Bootstrap's grid system.</p>
+                <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
